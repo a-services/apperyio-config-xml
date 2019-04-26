@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<plugin xmlns="http://apache.org/cordova/ns/plugins/1.0"
+        id="apperyio-config-xml" version="0.0.1">
+
+    <name>ApperyioConfigXml</name>
+    <description>Plugin to update config.xml for Appery.io projects</description>
+    <license>Apache 2.0</license>
+    <keywords>cordova,appery,config</keywords>
+
+    <!--js-module src="www/ApperyioConfigXml.js" name="ConfigXml">
+        <clobbers target="window.apperyioConfigXml" />
+    </js-module-->
+
+    <platform name="ios">
+        <config-file target="config.xml" parent="/*">
+            <preference name="AllowInlineMediaPlayback" value="true" />
+        </config-file>
+    </platform>
+</plugin>
