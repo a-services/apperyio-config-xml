@@ -3,7 +3,7 @@
 This plugin updates `config.xml` for link:https://appery.io[Appery.io] projects
 to set
 `AllowInlineMediaPlayback` preference to `true`.
-See https://cordova.apache.org/docs/en/5.1.1/guide/platforms/ios/config.html
+See https://cordova.apache.org/docs/en/latest/config_ref/index.html
 
 It also fixes the issue with Camera plugin configuration.
 See https://docs.appery.io/docs/known-issues#section-camera-plugin-variables-for-ios-projects-
