@@ -2,7 +2,7 @@
 
 <plugin xmlns="http://apache.org/cordova/ns/plugins/1.0"
         id="apperyio-config-xml" 
-        version="1.1.0">
+        version="1.1.1">
 
     <name>ApperyioConfigXml</name>
     <description>Plugin to update config.xml for Appery.io projects</description>
@@ -18,19 +18,25 @@
 
             <preference name="AllowInlineMediaPlayback" value="true" />
 
-			<edit-config target="NSCameraUsageDescription" file="*-Info.plist" mode="merge">
-			    <string>Need camera access to take pictures</string>
-			</edit-config>
-			<edit-config target="NSPhotoLibraryUsageDescription" file="*-Info.plist" mode="merge">
-			    <string>Need to photo library access to get pictures from there</string>
-			</edit-config>
-			<edit-config target="NSLocationWhenInUseUsageDescription" file="*-Info.plist" mode="merge">
-			    <string>Need location access to find things nearby</string>
-			</edit-config>
-			<edit-config target="NSPhotoLibraryAddUsageDescription" file="*-Info.plist" mode="merge">
-			    <string>Need to photo library access to save pictures there</string>
-			</edit-config>
-
         </config-file>
+
+
+    <config-file target="*-Info.plist" parent="CFBundleURLTypes">
+        <key>NSCameraUsageDescription</key>
+        <string>Need camera access to take pictures</string>
+
+        <key>NSPhotoLibraryAddUsageDescription</key>
+        <string>Need photo library access to save pictures there</string>
+
+        <key>NSPhotoLibraryUsageDescription</key>
+        <string>Need photo library access to get pictures from there</string>
+
+        <key>NSLocationWhenInUseUsageDescription</key>
+        <string>Need location access to find things nearby</string>
+
+    </config-file>
+
     </platform>
+
+
 </plugin>

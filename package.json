@@ -1,6 +1,6 @@
 {
   "name": "apperyio-config-xml",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "description": "Updating config.xml for Appery.io projects",
   "main": "index.js",
   "scripts": {
