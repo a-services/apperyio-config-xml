@@ -1,0 +1,17 @@
+= Updating config.xml for Appery.io projects
+
+This plugin updates `config.xml` for link:https://appery.io[Appery.io] projects
+to set
+`AllowInlineMediaPlayback` preference to `true`.
+See https://cordova.apache.org/docs/en/5.1.1/guide/platforms/ios/config.html
+
+It also fixes the issue with Camera plugin configuration.
+See https://docs.appery.io/docs/known-issues#section-camera-plugin-variables-for-ios-projects-
+
+After exporting xCode sources you should also remove following lines from `config.xml`
+to avoid a warning when uploading the app to App Store:
+
+```
+<key>UIApplicationExitsOnSuspend</key>
+<false/>
+```
